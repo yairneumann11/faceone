@@ -1,0 +1,18 @@
+homepage:
+	header
+	form wizard, step one
+	collection: photo
+
+insert mail:
+	header
+	form wizard, step two
+	collection: photo
+
+take picture:
+	header
+	form wizard, step three
+	collection: photo			
+
+all pictures:
+	header	
+	collection: photo					

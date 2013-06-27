@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="http://fonts.googleapis.com/css?family=Noticia+Text:700" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Lily+Script+One" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="stylesheets/bootstrap-responsive.css"/>
+    <link rel="stylesheet" href="stylesheets/bootstrap.css"/>
+    <link rel="stylesheet" href="stylesheets/style.css"/>
+    <title>FaceOne</title>
+</head>
+<body>
+
+<header class="header-app">
+    <div class="container-fluid">
+        <div class="row-fluid">
+            <div class="span8 same-height" id="header-description">
+                <div id="image-background"></div>
+                <section id="description_header">
+                    <h1>Face One</h1>
+
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab alias, consectetur culpa dicta ea
+                        expedita illo, magnam minus natus nisi nobis nostrum odit quidem quod reiciendis repellat rerum
+                        ullam unde?</p>
+                </section>
+            </div>
+            <div class="span4 same-height">
+                <input class="input-block-level" type="email" placeholder="Email address"/>
+                <a class="main-btn" id="start-photo" type="button" role="button" data-toggle="modal" data-target="#myModal" href="#myModal">Let's start</a>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- Modal -->
+<div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        <h3 id="myModalLabel">Modal header</h3>
+    </div>
+    <div class="modal-body">
+        <video id="video" autoplay="autoplay" src="" width="320" height="240"></video>
+    </div>
+    <div class="modal-footer">
+        <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+        <button id="startbutton">Take a photo</button>
+        <canvas id="canvas" width="320" height="240"></canvas>
+    </div>
+</div>
+<section>
+    <div class="container-fluid">
+        <div class="row-fluid">
+            <ul id="photo-grid"></ul>
+        </div>
+    </div>
+</section>
+
+<p><%=title%></p>
+
+<script type="text/javascript" data-main="javascripts/main.js" src="/javascripts/libs/require.js"></script>
+
+</body>
+</html>

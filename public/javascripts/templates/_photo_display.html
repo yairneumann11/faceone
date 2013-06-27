@@ -1,0 +1,9 @@
+<% _.each(photos, function(photo){ %>
+    <li class="span2" >
+        <div class="thumbnail">
+            <img src='<%= photo.attributes.photo_data %>' alt='<%= photo.attributes.name %>'/>
+            <h3><%= photo.attributes.qoute %></h3>
+            <p><%= photo.attributes.qoute %></p>
+        </div>
+    </li>
+<% }) %>
